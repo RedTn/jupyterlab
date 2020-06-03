@@ -183,6 +183,11 @@
       "selector": ".jp-Notebook.jp-mod-editMode"
     },
     {
+      "command": "notebook:save-metadata-cell",
+      "keys": ["Accel S"],
+      "selector": ".jp-MetadataEditorTool.jp-NotebookTools-tool"
+    },
+    {
       "command": "viewmenu:line-numbering",
       "keys": [""],
       "selector": ".jp-Notebook.jp-mod-commandMode"
