@@ -137,6 +137,8 @@ namespace CommandIDs {
 
   export const renderAllMarkdown = 'notebook:render-all-markdown';
 
+  export const saveMetadataCell = 'notebook:save-metadata-cell';
+
   export const toCode = 'notebook:change-cell-to-code';
 
   export const toMarkdown = 'notebook:change-cell-to-markdown';
@@ -1950,10 +1952,17 @@ function addCommands(
     label: 'Replace Selection in Notebook Cell',
     execute: args => {
       const current = getCurrent(args);
-      const text: string = (args['text'] as string) || '';
       if (current) {
+        const text: string = (args['text'] as string) || '';
         return NotebookActions.replaceSelection(current.content, text);
       }
+    },
+    isEnabled
+  });
+  commands.addCommand(CommandIDs.saveMetadataCell, {
+    label: 'Save metadata cell',
+    execute: args => {
+      console.error(tracker);
     },
     isEnabled
   });

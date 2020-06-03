@@ -28,7 +28,7 @@ key <https://raw.githubusercontent.com/jupyter/notebook/master/docs/source/ipyth
     :local:
     :depth: 1
 
-General Guidlelines for Contributing
+General Guidelines for Contributing
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 For general documentation about contributing to Jupyter projects, see
